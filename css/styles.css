@@ -90,7 +90,35 @@ main  .skills .skills-entry .line.Bootstrap{
     background-image: linear-gradient(to right, green 90%, lightgrey 10%);
 }
 
+/* -- Experience  --*/
+.card-content .clearfix::after {
+    display: inline-flex;
+    content: '';
+    clear: both;
+}
 
+.card-content .clearfix h5{
+    margin: 0 0 10px 0;
+    display: inline-flex;
+}
+
+.card-content .clearfix + p {
+    margin: 1em 0;
+}
+
+.card .collapsible {
+    border-right: none;
+    border-left: none;
+    box-shadow: none;
+}
+.card .collapsible-body ul, .card .collapsible-body ul li{
+    list-style-type: disc;
+    margin-block-start: 1em;
+}
+.card .collapsible-body ul{
+    padding-inline-start: 40px;
+
+}
 
 @media only screen and (max-width : 1200px) {
     
