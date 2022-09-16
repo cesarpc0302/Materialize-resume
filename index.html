@@ -8,6 +8,9 @@
     
     <!--Import Google Icon Font-->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
 
     <title>Materialize Resume</title>
 </head>
@@ -21,9 +24,8 @@
                     <i class="material-icons">menu</i>
                 </a>
                 <ul class="right hide-on-med-and-down">
-                    <li><a href="#">Contact Info</a></li>
-                    <li><a href="#">Education</a></li>
                     <li><a href="#">Experience</a></li>
+                    <li><a href="#">Education</a></li>
                     <li><a href="#">Work Samples</a></li>
                 </ul>
 
@@ -31,13 +33,104 @@
         </nav>
         <ul class="sidenav grey" id="mobile-menu">
             <li><a href="#">Contact Info</a></li>
-            <li><a href="#">Education</a></li>
             <li><a href="#">Experience</a></li>
+            <li><a href="#">Education</a></li>
             <li><a href="#">Work Samples</a></li>
         </ul>
     </header>
 
+    <main>
+
     <!-- Contact Info -->
+    <ul id="slide-out" class="sidenav sidenav-fixed hide-on-med-and-down">
+        <li >
+            <div class="user-view green darken-4 main-info">
+                <img class="circle" src="img/headshot.png" alt="headshot">
+                <div class="main-info-content">
+                    <div class="white-text name">Cesar Peralta</div>
+                    <div class="white-text">Web Content</div>
+                </div>
+            </div>
+        </li>
+        <div class="user-view description">
+            <li>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </li>
+            <br>
+            <li><i class="material-icons">phone_android</i> +506 8313 8949</li>
+            <a href="mailto:cperaltcoto@gmail.com?subject=We want to hire you!"><i class="material-icons black-text">email</i> <span class="email black-text">&nbsp;cperaltcoto@gmail.com</span></a>
+            <br>
+            <li><div class="divider"></div></li>
+        </div>
+        <div class="user-view skills">
+            <li class="skills-header"><strong>Skills</strong></li> 
+            <li class="skills-title">
+                Coding Languages
+            </li>
+            <li class="skills-entry">HTML5 <div class="HTML line"></div></li>
+            <li class="skills-entry">CSS3 <div class="CSS line"></div></li>
+            <li class="skills-entry">SASS <div class="SASS line"></div></li>
+            <li class="skills-entry">JavaScript <div class="JS line"></div></li>
+            <li class="skills-title">
+                Frameworks
+            </li>
+            <li class="skills-entry">Angular <div class="Angular line"></div></li>
+            <li class="skills-entry">Node.js <div class="Node line"></div></li>
+            <li class="skills-title">
+                Libraries
+            </li>
+            <li class="skills-entry">React <div class="React line"></div></li>
+            <li class="skills-entry">JQuery <div class="JQuery line"></div></li>
+            <li class="skills-entry">Bootstrap <div class="Bootstrap line"></div></li>
+        </div>
+
+    </ul>
+
+    <div class="container hide-on-large-only">
+        <div class="row">
+            <div class="col s12">
+                <div class="card">
+                    <div class="card-image">
+                        <img src="img/headshot.png" alt="headshot">
+                    </div>
+                    <div class="card-content">
+                        <div class="card-title"><strong>Cesar Peralta</strong></div>
+                        <div class="card-title">Web Content</div>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                        </p>
+                        <br>
+                        <div><i class="material-icons">phone_android</i> +506 8313 8949</div>
+                        <a href="mailto:cperaltcoto@gmail.com?subject=We want to hire you!"><i class="material-icons black-text">email</i> <span class="email black-text">&nbsp;cperaltcoto@gmail.com</span></a>
+                        <br>
+                        <div class="divider"></div>
+                        <br>
+                        <div class="skills">
+                            <div class="skills-header"><strong>Skills</strong></div> 
+                            <div class="skills-title">
+                                Coding Languages
+                            </div>
+                            <div class="skills-entry">HTML5 <div class="HTML line"></div></div>
+                            <div class="skills-entry">CSS3 <div class="CSS line"></div></div>
+                            <div class="skills-entry">SASS <div class="SASS line"></div></div>
+                            <div class="skills-entry">JavaScript <div class="JS line"></div></div>
+                            <div class="skills-title">
+                                Frameworks
+                            </div>
+                            <div class="skills-entry">Angular <div class="Angular line"></div></div>
+                            <div class="skills-entry">Node.js <div class="Node line"></div></div>
+                            <div class="skills-title">
+                                Libraries
+                            </div>
+                            <div class="skills-entry">React <div class="React line"></div></div>
+                            <div class="skills-entry">JQuery <div class="JQuery line"></div></div>
+                            <div class="skills-entry">Bootstrap <div class="Bootstrap line"></div></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <!-- Education -->
 
@@ -45,20 +138,15 @@
 
     <!-- Work Samples -->
 
+    </main>
+
     <!-- Footer -->
 
     <!-- Scripts -->
 
     <!-- Compiled and minified JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-    <!--JQuery CDN-->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <!-- Custom script-->
-    <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            var elems = document.querySelectorAll('.sidenav');
-            var instances = M.Sidenav.init(elems);
-        });
-    </script>
+    <!-- Custom scripts-->
+    <script src="/js/scripts.js"></script>
 </body>
 </html>
