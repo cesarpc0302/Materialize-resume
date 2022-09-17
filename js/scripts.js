@@ -1,3 +1,4 @@
+
 document.addEventListener('DOMContentLoaded', function() {
     /* sidebar */
     var elems = document.querySelectorAll('.sidenav');
@@ -7,7 +8,18 @@ document.addEventListener('DOMContentLoaded', function() {
     var instancesCo = M.Collapsible.init(elemsCo);
     /* carousel */
     var elemsCa = document.querySelectorAll('.carousel');
-    var instanceCa = M.Carousel.init(elemsCa, {
-        indicators: true
-      });
+
+    if(window.innerWidth > 991){
+        var instanceCa = M.Carousel.init(elemsCa, {
+            indicators: true
+        });
+        console.log (window.innerWidth); 
+    }else{
+        var instanceCa = M.Carousel.init(elemsCa, {
+            indicators: false,
+            fullWidth: true
+        });
+    }
+    
 });
+
