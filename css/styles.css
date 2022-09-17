@@ -120,6 +120,24 @@ main  .skills .skills-entry .line.Bootstrap{
 
 }
 
+/* -- Carousel -- */
+.carousel{
+    height: 450px;
+}
+.carousel .indicators .indicator-item.active {
+    background-color: #444;
+}
+.carousel .indicators .indicator-item {
+    background-color: rgba(68,68,68,0.5);
+}
+.carousel .carousel-item iframe {
+    width: 80%;
+    height: 400px;
+}
+.carousel.carousel-slider .carousel-item {
+    margin: 0 10%;
+}
+
 @media only screen and (max-width : 1200px) {
     
     /* -- Contact Info  --*/
