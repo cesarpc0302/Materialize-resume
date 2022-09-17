@@ -1,61 +1,85 @@
+html {
+    scroll-behavior: smooth;
+  }
+
+#experience:target, #education:target, #work:target {
+    padding-top: 50px;
+    margin-top: -50px;
+}
+
+/*-- header --*/
+
+.navbar-fixed {
+    position: sticky;
+    top: 0px;
+}
+.navbar-fixed nav {
+    position: fixed;
+    top: 0px;
+}
+
+.sidenav-overlay {
+    z-index: 990;
+}
+
 /* -- Contact Info  --*/
 
-header, main, footer {
+main, footer {
     padding-left: 500px;
 }
 
-main #slide-out{
+#slide-out{
     width: 500px;
 }
 
-main #slide-out .main-info{
+#slide-out .main-info{
     display: flex;
     padding: 32px 32px;
 }
-main #slide-out .main-info img{
+#slide-out .main-info img{
     height: 150;
     width: 150;
 }
-main #slide-out .main-info .main-info-content{
+#slide-out .main-info .main-info-content{
     padding-left: 32px;
     bottom: 0;
     align-self: end;
 }
 
-main #slide-out .main-info .main-info-content .name{
+#slide-out .main-info .main-info-content .name{
     font-size: 2rem;
 }
-main #slide-out .description .email {
+#slide-out .description .email {
     padding-top: 5px;
     padding-bottom: 0;
 }
-main #slide-out .description a{
+#slide-out .description a{
     display: inline-flex;
 }
 
-main .material-icons{
+.material-icons{
     line-height: inherit;
     vertical-align: middle;
 }
 
-main #slide-out .user-view li{
+#slide-out .user-view li{
     line-height: initial;
 }
 
-main  .skills .skills-header{
+.skills .skills-header{
     font-size: 1.2rem;
 }
-main  .skills .skills-title{
+.skills .skills-title{
     padding-bottom: 10px;
     padding-top: 10px;
 }
 
-main  .skills .skills-entry{
+.skills .skills-entry{
     padding-bottom: 12px;
     font-size: 0.8rem;
 }
 
-main  .skills .skills-entry .line{
+.skills .skills-entry .line{
     height: 3px;
     align-self: stretch;
     flex-grow: 0; 
@@ -65,28 +89,28 @@ main  .skills .skills-entry .line{
 .skills .skills-entry .line.HTML{
     background-image: linear-gradient(to right, green 85%, lightgrey 15%);
 }
-main .skills .skills-entry .line.CSS{
+.skills .skills-entry .line.CSS{
     background-image: linear-gradient(to right, green 85%, lightgrey 15%);
 }
-main  .skills .skills-entry .line.SASS{
+.skills .skills-entry .line.SASS{
     background-image: linear-gradient(to right, green 60%, lightgrey 40%);
 }
-main  .skills .skills-entry .line.JS{
+.skills .skills-entry .line.JS{
     background-image: linear-gradient(to right, green 70%, lightgrey 30%);
 }
-main  .skills .skills-entry .line.Angular{
+.skills .skills-entry .line.Angular{
     background-image: linear-gradient(to right, green 30%, lightgrey 30%);
 }
-main  .skills .skills-entry .line.Node{
+.skills .skills-entry .line.Node{
     background-image: linear-gradient(to right, green 70%, lightgrey 30%);
 }
-main  .skills .skills-entry .line.React{
+.skills .skills-entry .line.React{
     background-image: linear-gradient(to right, green 85%, lightgrey 15%);
 }
-main  .skills .skills-entry .line.JQuery{
+.skills .skills-entry .line.JQuery{
     background-image: linear-gradient(to right, green 85%, lightgrey 15%);
 }
-main  .skills .skills-entry .line.Bootstrap{
+.skills .skills-entry .line.Bootstrap{
     background-image: linear-gradient(to right, green 90%, lightgrey 10%);
 }
 
@@ -138,18 +162,25 @@ main  .skills .skills-entry .line.Bootstrap{
     margin: 0 10%;
 }
 
+/* -- footer -- */
+
+footer .row{
+    margin-bottom: 0;
+
+}
+
 @media only screen and (max-width : 1500px) {
     
     /* -- Contact Info  --*/
 
-    header, main, footer {
+    main, footer {
         padding-left: 300px;
     }
     
-    main #slide-out{
+    #slide-out{
         width: 300px;
     }
-    main #slide-out .main-info img{
+    #slide-out .main-info img{
         height: 72;
         width: 72;
         align-self: center;
