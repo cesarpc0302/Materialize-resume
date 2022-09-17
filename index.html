@@ -17,25 +17,25 @@
 <body class="grey lighten-2">
 
     <!-- Header -->
-    <header>
-        <nav class="nav-wrapper grey"> 
+    <header class="navbar-fixed">
+        <nav id="menu-nav-wrapper" class="nav-wrapper grey"> 
             <div class="container">
                 <a href="#" class="sidenav-trigger" data-target="mobile-menu">
                     <i class="material-icons">menu</i>
                 </a>
                 <ul class="right hide-on-med-and-down">
-                    <li><a href="#">Experience</a></li>
-                    <li><a href="#">Education</a></li>
-                    <li><a href="#">Work Samples</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#education">Education</a></li>
+                    <li><a href="#work">Work Samples</a></li>
                 </ul>
 
             </div>
         </nav>
-        <ul class="sidenav grey" id="mobile-menu">
-            <li><a href="#">Contact Info</a></li>
-            <li><a href="#">Experience</a></li>
-            <li><a href="#">Education</a></li>
-            <li><a href="#">Work Samples</a></li>
+        <ul class="sidenav grey white-text" id="mobile-menu">
+            <li><a class="white-text" href="#contact">Contact Info</a></li>
+            <li><a class="white-text" href="#experience">Experience</a></li>
+            <li><a class="white-text" href="#education">Education</a></li>
+            <li><a class="white-text" href="#work">Work Samples</a></li>
         </ul>
     </header>
 
@@ -86,7 +86,7 @@
 
     </ul>
 
-    <div class="container hide-on-large-only">
+    <div id="contact" class="container hide-on-large-only">
         <div class="card">
             <div class="card-image">
                 <img src="img/headshot.png" alt="headshot">
@@ -129,7 +129,8 @@
     </div>
 
     <!-- Experience -->
-    <div class="container">
+
+    <div class="container" id="experience" >
         <div class="card">
             <div class="card-content">
                 <div class="card-title center-align">
@@ -235,8 +236,8 @@
     </div>
 
     <!-- Education -->
-    <div class="container">
-        <div class="card">
+    <div class="container" id="education">
+        <div  class="card">
             <div class="card-content">
                 <div class="card-title center-align">
                     Education and courses
@@ -310,8 +311,8 @@
     </div>
     
     <!-- Work Samples -->
-    <div class="container">
-        <div class="card">
+    <div class="container" id="work">
+        <div  class="card">
             <div class="card-content">
                 <div class="card-title center-align">
                     Other work Sample
@@ -347,7 +348,7 @@
             </div>
           </div>
         </div>
-      </footer>
+    </footer>
 
 
     <!-- Compiled and minified JavaScript -->
